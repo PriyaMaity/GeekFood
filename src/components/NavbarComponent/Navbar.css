@@ -56,8 +56,10 @@
 .pages ul li::marker {
   color: #e63946;
 }
+.pages a:hover {
+  color: #2fd0bd;
+}
 .pages li:hover {
-  color: #158c7e;
   list-style-type: disc;
 }
 .pages a {
@@ -149,7 +151,6 @@ button:hover {
   background-color: #1a6b62;
 }
 
-/* Show hamburger and hide links on small screens */
 @media screen and (max-width: 768px) {
   .pages {
     display: none;
@@ -163,5 +164,21 @@ button:hover {
     font-size: 2rem;
     cursor: pointer;
     display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-container {
+    padding: 0 10px;
+  }
+  .logo-name {
+    gap: 3px;
+    margin: 3px;
+  }
+  .logo-name h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    padding: 8px 15px;
+    margin: 0 10px;
   }
 }
