@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.jpg";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -19,19 +20,19 @@ export default function Navbar() {
       <div className="pages">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">Quote</a>
+            <Link to="/quotes">Quotes</Link>
           </li>
           <li>
-            <a href="">Restaurants</a>
+            <Link to="/restaurants">Restaurants</Link>
           </li>
           <li>
-            <a href="">Foods</a>
+            <Link to="/foods">Foods</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
       </div>
@@ -46,19 +47,19 @@ export default function Navbar() {
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Quote</a>
+            <Link to="/quotes">Quotes</Link>
           </li>
           <li>
-            <a href="#">Restaurants</a>
+            <Link to="/restaurants">Restaurants</Link>
           </li>
           <li>
-            <a href="#">Foods</a>
+            <Link to="/foods">Foods</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
       </div>

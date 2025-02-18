@@ -182,3 +182,17 @@ button:hover {
     margin: 0 10px;
   }
 }
+@media screen and (max-width: 320px) {
+  .logo-name {
+    gap: 3px;
+    margin: 3px;
+  }
+  .logo-name h1 {
+    font-size: 1.3rem;
+  }
+  button {
+    padding: 8px 10px;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+}

@@ -191,7 +191,7 @@
     padding: 8px 13px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .content {
     width: 85%;
     height: 60vh;
@@ -207,6 +207,25 @@
     width: 60%;
     font-size: 0.9rem;
     padding: 10px 30px;
+  }
+  .btn-2 {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content {
+    width: 88%;
+    height: 65vh;
+    padding: 0.6rem;
+  }
+  .btns {
+    margin: 8px;
+  }
+  .btn-1,
+  .btn-2 {
+    width: 65%;
+    font-size: 0.9rem;
+    padding: 10px 20px;
   }
   .btn-2 {
     margin-left: 10px;
