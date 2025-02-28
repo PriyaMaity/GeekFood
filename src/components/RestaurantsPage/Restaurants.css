@@ -114,3 +114,12 @@
     margin-right: 5px;
   }
 }
+@media screen and (max-width: 320px) {
+  .restaurant-controls {
+    margin: 15px 10px;
+    gap: 15px;
+  }
+  .restaurant-search {
+    width: 150px;
+  }
+}
