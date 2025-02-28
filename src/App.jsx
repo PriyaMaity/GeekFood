@@ -7,6 +7,7 @@ import Grid from "./components/GridComponent/Grid";
 import Footer from "./components/FooterComponent/Footer";
 import "./App.css";
 import Quotes from "./components/QuotesPage/Quotes";
+import Restaurants from "./components/RestaurantsPage/Restaurants";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           }
         />
         <Route path="/quotes" element={<Quotes />} />
+        <Route path="/restaurants" element={<Restaurants />} />
       </Routes>
     </Router>
   );

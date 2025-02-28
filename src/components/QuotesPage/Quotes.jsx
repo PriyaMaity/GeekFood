@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../NavbarComponent/Navbar";
-import quotesData from "./quotes";
+import quotesData from "./quotesData";
 import "./Quotes.css";
 
-function Quotes() {
+const Quotes = () => {
   return (
     <div className="quotes-container">
-      <Navbar />
+      {/* <Navbar /> */}
       <h2 className="quotes-heading">Inspirational- Food - Quotes</h2>
       <ul className="quotes-list">
         {quotesData.map((quote) => (
@@ -18,6 +18,6 @@ function Quotes() {
       </ul>
     </div>
   );
-}
+};
 
 export default Quotes;
