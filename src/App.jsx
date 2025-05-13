@@ -9,6 +9,7 @@ import "./App.css";
 import Quotes from "./components/QuotesPage/Quotes";
 import Restaurants from "./components/RestaurantsPage/Restaurants";
 import Contact from "./components/ContactComponent/Contact";
+import Food from "./components/FoodComponent/Food";
 
 function App() {
   return (
