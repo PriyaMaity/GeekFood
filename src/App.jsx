@@ -7,7 +7,6 @@ import Grid from "./components/GridComponent/Grid";
 import Footer from "./components/FooterComponent/Footer";
 import "./App.css";
 import Quotes from "./components/QuotesPage/Quotes";
-import Food from "./components/FoodComponent/Food";
 import Restaurants from "./components/RestaurantsPage/Restaurants";
 import Contact from "./components/ContactComponent/Contact";
 

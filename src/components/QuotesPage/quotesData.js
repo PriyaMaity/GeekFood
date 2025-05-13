@@ -11,7 +11,7 @@ const quotesData = [
   },
   {
     id: 3,
-    text: "You don’t need a silver fork to eat good food.",
+    text: "You dont need a silver fork to eat good food.",
     author: "Paul Prudhomme",
   },
   {
