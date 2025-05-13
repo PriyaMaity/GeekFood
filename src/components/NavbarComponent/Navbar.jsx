@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -20,19 +20,45 @@ export default function Navbar() {
       <div className="pages">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/quotes">Quotes</Link>
+            <NavLink
+              to="/quotes"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Quotes
+            </NavLink>
           </li>
           <li>
-            <Link to="/restaurants">Restaurants</Link>
+            <NavLink
+              to="/restaurants"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Restaurants
+            </NavLink>
           </li>
           <li>
-            <Link to="/foods">Foods</Link>
+            <NavLink
+              to="/foods"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Foods
+            </NavLink>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Contacts
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -47,19 +73,54 @@ export default function Navbar() {
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/quotes">Quotes</Link>
+            <NavLink
+              to="/quotes"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Quotes
+            </NavLink>
           </li>
           <li>
-            <Link to="/restaurants">Restaurants</Link>
+            <NavLink
+              to="/restaurants"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Restaurants
+            </NavLink>
           </li>
           <li>
-            <Link to="/foods">Foods</Link>
+            <NavLink
+              to="/foods"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Food
+            </NavLink>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <NavLink
+              to="/contact"
+              end
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>

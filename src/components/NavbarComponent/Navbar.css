@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
   padding: 0 20px;
 }
 .logo-name {
@@ -48,20 +48,12 @@
 }
 .pages a:first-child {
   color: #158c7e;
-  list-style-type: disc;
 }
-.pages li:first-child {
-  list-style-type: disc;
-}
-.pages ul li::marker {
-  color: #e63946;
-}
+
 .pages a:hover {
   color: #2fd0bd;
 }
-.pages li:hover {
-  list-style-type: disc;
-}
+
 .pages a {
   text-decoration: none;
 }
@@ -69,7 +61,20 @@
   list-style-type: none;
   padding: 0;
 }
+.active-link {
+  font-weight: bold;
+  position: relative;
+}
 
+.active-link::before {
+  content: "•";
+  color: #e63946;
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
 .menu ul li {
   margin: 10px 0;
   text-align: center;
@@ -100,13 +105,14 @@ button:hover {
 .hamburger,
 .mobile-menu {
   display: none;
+  margin-right: 18px;
 }
 .mobile-menu {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 80px;
-  right: 0;
+  right: 10px;
   background-color: white;
   width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -183,16 +189,24 @@ button:hover {
   }
 }
 @media screen and (max-width: 320px) {
+  .nav-container {
+    width: 100%;
+    padding: 0;
+  }
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
   .logo-name {
     gap: 3px;
-    margin: 3px;
+    margin: 2.4px;
   }
   .logo-name h1 {
     font-size: 1.3rem;
   }
   button {
     padding: 8px 10px;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 1rem;
   }
 }

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Navbar from "../NavbarComponent/Navbar";
-import quotesData from "./quotes";
+import quotesData from "./quotesData";
 import "./Quotes.css";
 
 function Quotes() {
